@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN" scroll-behavior="smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>彩虹云</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link href="
+https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css
+" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Splide.js CSS -->
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <style>
+    [data-theme] {
+      all: unset;
+    }
+  </style>
+</head>
+
+<body class="font-inter">
+  <!-- header start -->
+  <header id="navbar" class="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-[1440px] mx-auto">
+      <nav class="flex items-center justify-between w-full py-2 px-4">
+        <div class="flex-1">
+          <a href="./index.html" class="text-lg xl:text-3xl text-space-grotesk font-bold flex items-center gap-2">
+            <div class="inline-flex items-center justify-center max-w-[60px] xl:max-w-[90px]">
+              <img src="./img/rainbow-logo-new.png" alt="" />
+            </div>
+            <span
+              class="bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">彩虹</span>
+          </a>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul
+          class="menu menu-horizontal px-1 hidden lg:flex items-center text-dark font-space-grotesk text-lg font-medium space-x-4">
+          <li>
+            <a href="#banner" class="hover:text-primary transition-colors duration-300">家</a>
+          </li>
+          <li>
+            <a href="#introduction" class="hover:text-primary transition-colors duration-300">介绍</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-primary transition-colors duration-300">服务</a>
+          </li>
+          <li>
+            <a href="#pricing" class="hover:text-primary transition-colors duration-300">定价</a>
+          </li>
+          <li>
+            <a href="https://hean.shop/#/login"
+              class="bg-primary text-white px-5 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ml-4">登录/注册</a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn"
+          class="btn btn-ghost btn-square lg:hidden border-0 outline-0 !bg-transparent hover:bg-transparent focus:bg-transparent focus:outline-none"
+          aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile menu dropdown -->
+      <div id="mobile-menu" class="hidden bg-white/30 backdrop-blur-md shadow-sm w-full text-center">
+        <ul class="menu menu-vertical py-3 px-4 space-y-3 text-dark font-space-grotesk text-lg text-center font-medium">
+          <li>
+            <a href="#banner" class="block hover:text-primary transition-colors duration-300 text-center">家</a>
+          </li>
+
+          <li>
+            <a href="#introduction" class="block hover:text-primary transition-colors duration-300 text-center">介绍</a>
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-primary transition-colors duration-300 text-center">服务</a>
+          </li>
+          <li>
+            <a href="#pricing" class="block hover:text-primary transition-colors duration-300 text-center">服务</a>
+          </li>
+
+          <li>
+            <a href="https://hean.shop/#/login"
+              class="bg-primary text-white px-5 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 ml-4">登录/注册</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- main start -->
+  <main>
+    <!-- banner start -->
+    <section id="banner" class="pt-24 pb-10 xl:pt-42 xl:pb-24" data-aos="fade-in" data-aos-duration="1000">
+      <div class="max-w-[1440px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-7">
+        <div class="w-full lg:w-1/2 flex flex-col items-start justify-center text-left order-2 lg:order-1"
+          data-aos="fade-right" data-aos-duration="1500">
+          <h3 class="text-space-grotesk text-lg lg:text-2xl xl:text-3xl font-medium">
+            全球网络加速服务
+          </h3>
+          <h1
+            class="text-space-grotesk text-3xl lg:text-4xl xl:text-6xl font-bold mt-2 mb-4 max-w-[700px] 2xl:leading-20">
+            使用 -<span
+              class="bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">彩虹云</span>-
+            开始你的互联网之旅
+          </h1>
+          <p class="text-gray text-base lg:text-lg xl:text-xl mb-7">
+            获得与全球数百家内容提供商互联的网络加速服务，单线接入能力高达3000Mbps
+          </p>
+          <a href="https://hean.shop/#/login"
+            class="bg-primary text-white px-10 py-2 rounded-full border-[2px] border-primary hover:bg-transparent hover:text-primary transition-colors duration-300 text-space-grotesk font-medium text-lg">开始</a>
+        </div>
+        <div class="w-full lg:w-1/2 flex items-center justify-center xl:justify-end order-1 lg:order-2"
+          data-aos="fade-left" data-aos-duration="1500">
+          <div class="">
+            <img src="./img/rainbow-bg.jpg" alt="" class="rounded-2xl xl:rounded-3xl w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- social start -->
+    <section id="introduction" class="bg-secondary py-16" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-[1130px] mx-auto px-4">
+        <div
+          class="grid grid-cols-3 md:grid-cols-5 gap-4 justify-center items-center max-w-[400px] lg:max-w-[900px] mx-auto">
+          <!-- Icon Item -->
+          <div
+            class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-dark/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110">
+            <i class="ri-twitter-x-line text-3xl xl:text-5xl text-dark"></i>
+          </div>
+
+          <div
+            class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-red-400/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110">
+            <i class="ri-youtube-fill text-3xl xl:text-5xl text-red-700"></i>
+          </div>
+
+          <div
+            class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-red-600/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110">
+            <i class="ri-pinterest-fill text-3xl xl:text-5xl text-red-600"></i>
+          </div>
+
+          <div
+            class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-primary/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110">
+            <i class="ri-wordpress-fill text-3xl xl:text-5xl text-primary"></i>
+          </div>
+
+          <div
+            class="w-full max-w-[80px] md:max-w-[120px] mx-auto aspect-square bg-purple-400/10 rounded-lg flex items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:hover:scale-110">
+            <i class="ri-behance-fill text-3xl xl:text-5xl text-purple-400"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- introduction start -->
+    <section id="introduction" class="py-10 xl:py-20" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-[1280px] mx-auto px-4 flex flex-col justify-center items-center space-y-6 md:space-y-8">
+        <h2 class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center" data-aos="fade-up"
+          data-aos-duration="1500">
+          介绍
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 2xl:gap-6 max-w-[800px]">
+          <!-- items 1 -->
+          <div
+            class="flex flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10"
+            data-aos="fade-up" data-aos-duration="1600">
+            <!-- img -->
+            <div>
+              <img src="./img/media.webp" alt="" class="w-[75%] lg:w-[65%] mx-auto" />
+            </div>
+            <!-- content -->
+            <div class="mt-6">
+              <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                使用社交媒体
+              </h3>
+              <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                可以用各种社交媒体
+              </h4>
+              <p class="text-sm text-gray">
+                访问社交媒体平台如Facebook、Twitter、Instagram等，与国际朋友和家人保持联系。加入Reddit、Quora等国际论坛，分享见解和学习新知识。
+              </p>
+            </div>
+          </div>
+          <!-- items 2 -->
+          <div
+            class="flex flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10"
+            data-aos="fade-up" data-aos-duration="1700">
+            <!-- img -->
+            <div>
+              <img src="./img/launch.webp" alt="" class="w-[75%] lg:w-[65%] mx-auto" />
+            </div>
+            <!-- content -->
+            <div class="mt-6">
+              <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                使用知识类工具：
+              </h3>
+              <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                可以用各种学习工具
+              </h4>
+              <p class="text-sm text-gray">
+                维基百科Wikipedia-自由的百科全书；Coursera-致力于普及全世界最好的教育；Stackoverflow-最牛逼的IT
+                技术问答网站；GitHub-是一个面向开发者的平台，主要用于托管和协作开发代码项目，它在全球程序员和软件开发团队中非常流行;
+              </p>
+            </div>
+          </div>
+          <!-- items 3 -->
+          <div
+            class="flex-col items-center justify-center rounded-lg shadow-md p-6 bg-primary/5 border-[2px] border-primary/10 hidden"
+            data-aos="fade-up" data-aos-duration="1700">
+            <!-- img -->
+            <div>
+              <img src="./img/upload.webp" alt="" class="w-[75%] lg:w-[65%] mx-auto" />
+            </div>
+            <!-- content -->
+            <div class="mt-6">
+              <h3 class="text-xl lg:text-2xl font-bold text-dark">
+                解锁流媒体服务
+              </h3>
+              <h4 class="text-base text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                可以观看各类视频平台
+              </h4>
+              <p class="text-sm text-gray">
+                突破地域限制，您可以在世界任何地方流畅观看
+                Netflix、Hulu、HBO、DisneyPlus、TVB、AbemaTV、DAZN
+                等流媒体内容，让您可以自由访问自己喜爱的内容。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- support  start -->
+    <section id="support" class="py-10 xl:py-20 bg-secondary" data-aos="fade-in" data-aos-duration="1000">
+      <div class="max-w-[1440px] mx-auto px-4">
+        <h2
+          class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center md:leading-14 mx-auto space-y-6 md:space-y-8">
+          支持主流订阅软件
+        </h2>
+        <div class="relative">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 justify-between items-center gap-8 lg:gap-6 mt-10 max-w-[1280px] mx-auto">
+            <!-- items 1 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto">
+              <!-- img -->
+              <div class="max-w-24 p-5 bg-primary/10 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48" id="Layer_2"
+                  data-name="Layer 2">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #0066ff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <path class="cls-1"
+                    d="M40.53,6.78a.26.26,0,0,1,.22.31L34.36,35.26a.22.22,0,0,1-.28.16l-13.64-4.3a.52.52,0,0,1-.25-.83l11.6-14.17L31.68,16,15.61,29.84a.58.58,0,0,1-.54.09L3.87,25.52a.21.21,0,0,1,0-.38L40.39,6.81l.14,0Zm-20.4,27,6.69-.69-6.41,8a.28.28,0,0,1-.5-.18l.17-10.47" />
+                </svg>
+              </div>
+              <!-- content -->
+              <div class="mt-6 text-center">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                  Shadowrocket
+                </h3>
+                <p class="text-sm text-gray">
+                  适用于iPhone/iPad基于规则的代理实用程序客户端。
+                </p>
+              </div>
+            </div>
+            <!-- items 2 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto">
+              <!-- img -->
+              <div class="max-w-24 p-5 bg-[#C17BF9]/10 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="38px" viewBox="0 0 48 48">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: none;
+                        stroke: #c17bf9;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <path class="a"
+                    d="M11.1341,15.0463c.5859-2.1586,2.7622-7.5618,4.3822-7.5618,1.9441,0,4.1041,4.9142,4.1041,4.9142" />
+                  <line class="a" x1="4.662" y1="24.819" x2="9.5581" y2="26.4571" />
+                  <line class="a" x1="5.6792" y1="34.5894" x2="9.7381" y2="32.0912" />
+                  <line class="a" x1="4.5" y1="29.4632" x2="9.7381" y2="29.4632" />
+                  <circle class="a" cx="17.1904" cy="24.9405" r="2.0926" />
+                  <path class="a"
+                    d="M24,40.5155h3.7856c11.8443,0,12.7083-9.2523,12.7083-12.7084V24.3585c0-11.1528-8.4962-11.96-13.2484-11.96h-6.491c-4.7522,0-13.2484.807-13.2484,11.96v3.4486c0,3.4561.864,12.7084,12.7083,12.7084Z" />
+                  <path class="a"
+                    d="M36.8659,15.0463c-.5859-2.1586-2.7622-7.5618-4.3822-7.5618-1.9441,0-4.1041,4.9142-4.1041,4.9142" />
+                  <line class="a" x1="43.338" y1="24.819" x2="38.4419" y2="26.4571" />
+                  <line class="a" x1="42.3208" y1="34.5894" x2="38.2619" y2="32.0912" />
+                  <line class="a" x1="43.5" y1="29.4632" x2="38.2619" y2="29.4632" />
+                  <circle class="a" cx="30.8096" cy="24.9405" r="2.0926" />
+                  <path class="a"
+                    d="M24.6157,29.9768l1.72-2.2862a.77.77,0,0,0-.6156-1.2335H22.28a.77.77,0,0,0-.6156,1.2335l1.72,2.2862A.77.77,0,0,0,24.6157,29.9768Z" />
+                </svg>
+              </div>
+              <!-- content -->
+              <div class="mt-6 text-center">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                  ClashVerge
+                </h3>
+                <p class="text-sm text-gray">
+                  ClashVerge 是 MacOS 系统、Windows 系统下的代理软件客户端
+                </p>
+              </div>
+            </div>
+            <!-- items 3 -->
+            <div
+              class="flex flex-col items-center justify-center rounded-xl p-6 border-[2px] border-primary/10 md:max-w-[350px] w-full h-full bg-secondary z-20 mx-auto">
+              <!-- img -->
+              <div class="max-w-24 p-5 bg-[#173C62]/10 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="38px" viewBox="0 0 48 48">
+                  <defs>
+                    <style>
+                      .a,
+                      .b {
+                        fill: none;
+                        stroke: #173c62;
+                        stroke-linecap: round;
+                      }
+
+                      .a {
+                        stroke-linejoin: round;
+                      }
+
+                      .b {
+                        stroke-miterlimit: 5.7143;
+                      }
+                    </style>
+                  </defs>
+                  <path class="a"
+                    d="M27.19,42.5a89.0444,89.0444,0,0,1-14.6813-1.5725S13.94,12.3721,17.9209,5.5357c-.13-.297,2.9919,1.2125,4.4218,6.2665a25.5569,25.5569,0,0,1,4.8471-.47" />
+                  <ellipse class="a" cx="21.2404" cy="20.3089" rx="1.6708" ry="2.1301" />
+                  <path class="a"
+                    d="M27.19,42.5a89.0444,89.0444,0,0,0,14.6813-1.5725S40.44,12.3721,36.4583,5.5357c.03-.2006-3.59,1.7549-4.4218,6.2665a25.5582,25.5582,0,0,0-4.8471-.47" />
+                  <ellipse class="a" cx="33.1398" cy="20.3089" rx="1.6708" ry="2.1301" />
+                  <path class="b"
+                    d="M12.5083,40.927C10.5777,40.6,7.56,40.6178,6.4685,37.44c-1.0674-3.107.4377-6.6708,3.7411-7.0453" />
+                  <path class="b" d="M25.4634,26.3872a1.4666,1.4666,0,0,0,1.4726-1.4725" />
+                  <path class="b" d="M28.4091,26.3872a1.4666,1.4666,0,0,1-1.4726-1.4725" />
+                </svg>
+              </div>
+              <!-- content -->
+              <div class="mt-6 text-center">
+                <h3 class="text-xl lg:text-2xl font-bold text-dark mb-2">
+                  Clash for Android
+                </h3>
+                <p class="text-sm text-gray">
+                  一个适用于Android的冲突客户端。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- line -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[70%] w-[1px] border-l border-dashed border-primary md:h-[1px] md:w-[70%] md:border-l-0 md:border-t">
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1440px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center mt-10 xl:mt-20 space-y-6 md:space-y-0 lg:gap-7"
+        data-aos="fade-up" data-aos-duration="1500">
+        <div class="w-full lg:w-1/2">
+          <div>
+            <img src="./img/7.jpg" alt="" class="w-[90%] md:w-[90%] mx-auto rounded-2xl xl:rounded-3xl" />
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 flex flex-col text-start">
+          <h3 class="text-xl lg:text-3xl font-bold text-dark">
+            您的所有设备都将受到保护
+          </h3>
+          <p class="text-base text-gray mt-3 max-w-[600px]">
+            彩虹云支持市面上所有主流设备，
+            确保在多平台设备上为您提供隐私数据保护。
+            您可以随时随地在Windows、Mac、 iOS、Android、Android
+            TV、Linux等平台上使用，多设备可接入网络。
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-5 max-w-[600px] mt-6 lg:mt-7">
+            <!-- item-1 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-windows-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">Windows</span>
+            </div>
+            <!-- item-2 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-finder-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">macOS</span>
+            </div>
+            <!-- item-3 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-ubuntu-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">Linux</span>
+            </div>
+            <!-- item-4 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-apple-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">Apple</span>
+            </div>
+            <!-- item-5 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-android-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">Android</span>
+            </div>
+            <!-- item-6 -->
+            <div class="inline-flex flex-row items-center gap-3 bg-primary/10 rounded-lg p-2">
+              <div class="w-9 h-9 flex items-center justify-center bg-primary rounded-md">
+                <i class="ri-tv-2-fill text-white text-2xl"></i>
+              </div>
+              <span class="text-base lg:text-lg font-medium">TV OS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services start -->
+    <section id="services" class="py-10 xl:py-20" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-[1440px] mx-auto px-4 space-y-6 md:space-y-9">
+        <h2 class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center">
+          服务内容
+        </h2>
+        <div class="flex flex-col lg:flex-row items-center justify-center">
+          <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="1500">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <!-- items 1 -->
+              <div
+                class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5">
+                <!-- img -->
+                <div class="w-13 h-13 flex items-center justify-center bg-red-400/20 rounded-md">
+                  <i class="ri-flashlight-fill text-red-400 text-2xl lg:text-3xl"></i>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center lg:text-start">
+                  <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                    高速稳定线路
+                  </h3>
+                  <p class="text-sm text-gray">
+                    高速传输，极致带宽体验 全球跨区域低延迟宽带数据传输
+                  </p>
+                </div>
+              </div>
+              <!-- items 2 -->
+              <div
+                class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5">
+                <!-- img -->
+                <div class="w-13 h-13 flex items-center justify-center bg-purple-400/20 rounded-md">
+                  <i class="ri-settings-5-fill text-purple-400 text-2xl lg:text-3xl"></i>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center lg:text-start">
+                  <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                    简单的操作配置
+                  </h3>
+                  <p class="text-sm text-gray">
+                    全方位客户支持 简单的操作配置 简单易用的合适客户端
+                  </p>
+                </div>
+              </div>
+              <!-- items 3 -->
+              <div
+                class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5">
+                <!-- img -->
+                <div class="w-13 h-13 flex items-center justify-center bg-green-400/20 rounded-md">
+                  <i class="ri-lightbulb-fill text-green-400 text-2xl lg:text-3xl"></i>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center lg:text-start">
+                  <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                    运营商智能优化
+                  </h3>
+                  <p class="text-sm text-gray">
+                    从入口到落地，甄选优质运营商 多层线路优化，负载均衡设置
+                  </p>
+                </div>
+              </div>
+              <!-- items 4 -->
+              <div
+                class="flex flex-col items-center lg:items-start rounded-lg shadow-md p-6 bg-blue-gradient border-[2px] border-primary/5">
+                <!-- img -->
+                <div class="w-13 h-13 flex items-center justify-center bg-primary/20 rounded-md">
+                  <i class="ri-group-fill text-primary text-2xl lg:text-3xl"></i>
+                </div>
+                <!-- content -->
+                <div class="mt-6 text-center lg:text-start">
+                  <h3 class="text-lg lg:text-xl font-bold text-dark mb-2">
+                    丰富社区服务
+                  </h3>
+                  <p class="text-sm text-gray">
+                    整合社区系统，完善学习文档 多用户交流平台，内容丰富 文档
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 lg:block hidden" data-aos="fade-left" data-aos-duration="1500">
+            <div>
+              <img src="./img/chat.webp" alt="" class="w-[80%] md:w-[60%] mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing start -->
+    <section id="pricing" class="py-10 xl:py-20 bg-secondary" data-aos="fade-up" data-aos-duration="1000">
+      <div class="max-w-[1440px] mx-auto px-4 space-y-6 md:space-y-9">
+        <h2 class="text-[26px] lg:text-3xl xl:text-5xl font-bold text-center">
+          定价
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+          <!-- items 1 -->
+          <div class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-white"
+            data-aos="fade-up" data-aos-duration="1500">
+            <!-- content -->
+            <div class="">
+              <h4 class="text-lg lg:text-2xl text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                冲浪-包月555G
+              </h4>
+              <h3 class="text-xl lg:text-5xl font-bold text-dark">
+                ¥22.90/<span class="text-lg text-gray">月付</span>
+              </h3>
+
+              <ul class="space-y-2 mt-6">
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">流量：555 GB/月[当月用完可购买重置包]
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">设备：不限制，支持家庭成员共享
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">媒体：解锁流媒体 </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">传输：Simple中转隧道
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">支持chatgpt使用</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- items 2 -->
+          <div class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-primary relative"
+            data-aos="fade-up" data-aos-duration="1700">
+            <span
+              class="text-sm text-dark font-semibold absolute right-3 -top-3 left-1/2 -translate-x-1/2 z-20 bg-green py-1 px-2 rounded-full inline-flex items-center justify-center">
+              最受欢迎
+            </span>
+
+            <!-- content -->
+            <div class="">
+              <h4 class="text-lg lg:text-2xl text-white font-semibold mt-1 mb-3 lg:mb-4">
+                轻量-包月222G
+              </h4>
+              <h3 class="text-xl lg:text-5xl font-bold text-white">
+                ¥15/<span class="text-lg text-white">月付</span>
+              </h3>
+
+              <ul class="space-y-2 mt-6">
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-green"></i>
+                  <span class="text-base text-white">流量：222 GB/月[当月用完可购买重置包]
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-green"></i>
+                  <span class="text-base text-white">设备：不限制，支持家庭成员共享
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-green"></i>
+                  <span class="text-base text-white">媒体：解锁流媒体</span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-green"></i>
+                  <span class="text-base text-white">传输：Simple中转隧道
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-green"></i>
+                  <span class="text-base text-white">支持chatgpt使用</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- items 3 -->
+          <div class="flex flex-col items-center justify-center rounded-2xl shadow-md px-6 py-8 bg-white"
+            data-aos="fade-up" data-aos-duration="1900">
+            <!-- content -->
+            <div class="">
+              <h4 class="text-lg lg:text-2xl text-dark font-semibold mt-1 mb-3 lg:mb-4">
+                豪华-包月888G
+              </h4>
+              <h3 class="text-xl lg:text-5xl font-bold text-dark">
+                ¥33.90/<span class="text-lg text-gray">月付 </span>
+              </h3>
+
+              <ul class="space-y-2 mt-6">
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">流量：888 GB/月[当月用完可购买重置包]
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">设备：不限制，支持家庭成员共享
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">媒体：解锁流媒体</span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">传输：Simple中转隧道
+                  </span>
+                </li>
+                <li class="flex flex-row items-center gap-2">
+                  <i class="ri-circle-fill text-[10px] text-primary"></i>
+                  <span class="text-base text-gray">支持chatgpt使用</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main end -->
+  <!-- footer start -->
+  <footer class="bg-accent">
+    <div class="container mx-auto px-4 py-8 xl:py-14 flex flex-col justify-center items-center">
+      <a href="./index.html" class="text-lg xl:text-3xl text-space-grotesk font-bold flex items-center gap-2">
+        <div class="inline-flex items-center justify-center max-w-[60px] xl:max-w-[90px]">
+          <img src="./img/rainbow-logo-new.png" alt="" />
+        </div>
+        <span
+          class="bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">彩虹</span>
+      </a>
+      <p class="text-center text-base text-gray mt-5">
+        使用先进的 和云技术保护您的数字生活。
+      </p>
+      <ul class="flex flex-row gap-4 mt-6 mb-9">
+        <li>
+          <a href="#"
+            class="bg-primary/20 p-2 flex justify-center items-center rounded-lg hover:bg-primary group max-w-10 max-h-10"><i
+              class="ri-facebook-circle-fill text-primary group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"></i></a>
+        </li>
+        <li>
+          <a href="#"
+            class="bg-red-400/20 p-2 flex justify-center items-center rounded-lg hover:bg-red-400 group max-w-10 max-h-10"><i
+              class="ri-youtube-fill text-red-400 group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"></i></a>
+        </li>
+        <li>
+          <a href="#"
+            class="bg-orange-400/20 p-2 flex justify-center items-center rounded-lg hover:bg-orange-400 group max-w-10 max-h-10"><i
+              class="ri-instagram-fill text-orange-400 group-hover:text-white transition-colors ease-in-out duration-300 text-2xl"></i></a>
+        </li>
+      </ul>
+      <p class="text-center text-sm text-gray-600">
+        &copy; <span id="year"></span> 彩虹云，版权所有。
+      </p>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- scroll to top start -->
+  <button id="scrollToTopBtn"
+    class="fixed bottom-6 right-6 hidden w-10 h-10 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 z-50 flex items-center justify-center cursor-pointer"
+    aria-label="Scroll to top">
+    <i class="ri-arrow-up-line text-xl"></i>
+  </button>
+
+  <!-- scroll to top end -->
+  <!-- js -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const navbar = document.getElementById("navbar");
+
+    // Toggle on button click
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      navbar.classList.toggle("shadow-md");
+    });
+
+    // Close menu on link click
+    const menuLinks = menu.querySelectorAll("a"); // All <a> inside mobile menu
+
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden"); // Hide the menu
+        navbar.classList.remove("shadow-md"); // Optional: remove shadow
+      });
+    });
+  </script>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show/hide button on scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.remove("hidden");
+      } else {
+        scrollToTopBtn.classList.add("hidden");
+      }
+    });
+
+    // Scroll to top on click
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

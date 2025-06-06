@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes: false;
+}
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+
+  --color-primary: #0066ff;
+  --color-secondary: #f5f9fc;
+  --color-accent: #eff6ff;
+  --color-dark: #001e3c;
+  --color-gray: #4b5563;
+  --color-green: #00ff88;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown .dropdown-content {
+  position: absolute !important;
+  top: 100%;
+  left: 0 !important;
+  width: 100vw !important;
+  margin-top: 0.75rem;
+  border-radius: 0 !important;
+  text-align: center;
+  box-shadow: var(--tw-shadow);
+  z-index: 50;
+}
+
+.bg-blue-gradient {
+  background: #0066ff;
+  background: -webkit-linear-gradient(
+    133deg,
+    rgba(0, 102, 255, 0.06) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    133deg,
+    rgba(0, 102, 255, 0.06) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    133deg,
+    rgba(0, 102, 255, 0.06) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0066FF", endColorstr="#FFFFFF", GradientType=0);
+}
+.bg-bluex-gradient-new {
+  background: #0066ff;
+  background: linear-gradient(
+    155deg,
+    rgba(0, 102, 255, 1) 0%,
+    rgba(8, 59, 199, 1) 100%
+  );
+}
+
+/* Custom Splide navigation button styles */
+.splide__arrow {
+  background: #3b82f6; /* Blue background for arrows */
+  border-radius: 9999px; /* Full rounded */
+  width: 3rem; /* Larger touch target */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1; /* Always visible */
+  transition: background-color 0.3s ease;
+}
+.splide__arrow svg {
+  fill: white; /* White arrow icon */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.splide__arrow:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+.splide__arrow--prev {
+  left: -1rem; /* Adjust positioning */
+}
+.splide__arrow--next {
+  right: -1rem; /* Adjust positioning */
+}
+
+/* Custom Splide pagination styles */
+.splide__pagination {
+  bottom: -2rem; /* Position pagination below the carousel */
+  transform: translateY(0); /* Reset transform */
+}
+.splide__pagination__page {
+  background: #cbd5e1; /* Light gray for inactive dots */
+  opacity: 1; /* Ensure visibility */
+  transition: background-color 0.3s ease;
+  width: 0.75rem; /* Larger dot size */
+  height: 0.75rem;
+  margin: 0 0.375rem; /* Spacing between dots */
+}
+.splide__pagination__page.is-active {
+  background: #3b82f6; /* Blue for active dot */
+  transform: scale(1.2); /* Slightly larger active dot */
+}
+/* Ensure slide height uniformity */
+.splide__slide {
+  height: auto; /* Allow content to dictate height */
+  display: flex; /* Use flexbox to align content */
+  align-items: stretch; /* Stretch items to fill height */
+}
+.splide__slide > div {
+  flex-grow: 1; /* Allow inner content to grow */
+}
+
+/* Custom Splide styles for smaller screens */
+@media (max-width: 768px) {
+  .splide__arrow {
+    width: 2.5rem; /* Smaller touch target */
+    height: 2.5rem;
+  }
+  .splide__arrow svg {
+    width: 1.25rem; /* Smaller arrow icon */
+  }
+  .splide__pagination__page {
+    width: 0.45rem; /* Larger dot size */
+    height: 0.45rem;
+    margin: 0 0.375rem; /* Spacing between dots */
+  }
+}
+html,
+:host {
+  scroll-behavior: smooth;
+}
